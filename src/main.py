@@ -47,7 +47,7 @@ def handle_hello():
 
     return jsonify(all_user), 200
 
-
+#posting is sending the info to the database
 @app.route('/user', methods=['POST'])
 def createUser():
     body = request.get_json()
@@ -67,7 +67,7 @@ def createUser():
 
     return 'User was added', 200
 
-
+#updating info to database
 @app.route('/user/<int:id>', methods=['PUT'])
 def updateUser(id):
     user1 = User.query.get(id)
