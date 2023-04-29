@@ -93,7 +93,7 @@ def deleteUser(id):
     return 'User deleted'
 
 
-# // beginning characters section
+# // Beginning Characters Section
 @app.route('/characters', methods=['GET'])
 def get_characters():
 
