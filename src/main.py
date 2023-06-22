@@ -82,7 +82,7 @@ def updateUser(id):
     db.session.commit()
     return 'ok'
 
-
+#deleting info from database
 @app.route('/user/<int:id>', methods=['DELETE'])
 def deleteUser(id):
     user1 = User.query.get(id)
